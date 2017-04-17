@@ -1,0 +1,126 @@
+.product-banner {
+    margin-top: 150px;
+    padding-bottom: 15px;
+    color: $main-color;
+    .section-subtitle {
+        margin-bottom: 40px;
+        &:before,
+        &:after {
+            @extend .section-title-line;
+            width: 280px;
+        }
+    }
+    .product-banner-img {
+        width: 100%;
+    }
+    &.grilla-title {
+        .section-subtitle {
+            margin-bottom: 40px;
+            &:before,
+            &:after {
+                @extend .section-title-line;
+                width: 210px;
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+.product-area {
+    margin-bottom: 20px;
+    .salud-area,
+    .industrial-area {
+        background-color: #d1d1d1;
+        color: $main-color;
+        border-right: 5px solid #FFF;
+        .area-img {
+            margin-bottom: 20px;
+            margin: 62px 50px 15px 50px;
+            width: 33%;
+        }
+        .section-subtitle {
+            margin-bottom: 40px;
+        }
+        &:hover {
+            background-color: $blue-color;
+            color: $white-color;
+        }
+    }
+    .industrial-area {
+        border-right: 0;
+        border-left: 5px solid #FFF;
+    }
+}
+
+.mobile,
+.salud-area-extra,
+.industrial-area-extra {
+    margin-bottom: 40px;
+    display: none;
+    .indumentaria,
+    .kits,
+    .panios,
+    .descartable,
+    .tela,
+    .guantes,
+    .seguridad {
+        background-color: #d1d1d1;
+        color: $main-color;
+        border-right: 5px solid #FFF;
+        padding: 25px;
+        height: 100px;
+        margin-bottom: 10px;
+        .section-subtitle {
+            font-size: 24px;
+        }
+        &:hover {
+            background-color: $blue-color;
+            color: $white-color;
+            text-decoration: none;
+        }
+    }
+    .kits {
+        padding: 35px;
+    }
+}
+
+.grilla {
+    margin-top: 30px;
+    .producto {
+        position: relative;
+        overflow: hidden;
+        height: 280px;
+        margin-bottom: 15px;
+        .producto-img {
+            width: 100%;
+            height: 100%;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .producto-img-desc {
+            @extend .transitionstd;
+            background: $main-color;
+            color: $white-color;
+            position: absolute;
+            width: 98%;
+            height: 100%;
+            top: 0;
+            opacity: .5;
+            .section-subtitle {
+                position: relative;
+                top: 40%;
+                left: 0px;
+            }
+        }
+        &:hover {
+            .producto-img-desc {
+                opacity: .8;
+                h3 {
+                    font-weight: $font-semibold;
+                }
+            }
+        }
+    }
+}

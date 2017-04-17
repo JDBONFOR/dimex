@@ -1,0 +1,135 @@
+.navbar {
+    &.navbar-default {
+        position: absolute;
+        top: 30px;
+        width: 100%;
+        height: 80px;
+        z-index: 1000;
+        border-radius: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 3px 15px 0px #afafaf;
+        .navbar-header {
+            .navbar-brand {
+                .logo {
+                    width: 150px;
+                }
+            }
+        }
+        .navbar-nav {
+            margin-top: 20px;
+            li {
+                margin: 0 15px;
+                a {
+                    padding: 10px;
+                    color: $black-color;
+                    font-weight: $font-light;
+                    &:hover {
+                        font-weight: $font-bold;
+                        color: $main-color;
+                    }
+                }
+                &:after {
+                    position: absolute;
+                    top: 13px;
+                    right: -20px;
+                    content: url(../assets/bullet-menu.jpg);
+                }
+                &:last-child:after {
+                    content: "";
+                }
+            }
+        }
+    }
+}
+
+.page-content {
+    #about-us {
+        background-color: $section-color;
+        position: relative;
+        .about-desc {
+            line-height: 1.5em;
+            font-weight: $font-light;
+            p {
+                margin-bottom: 15px;
+            }
+        }
+        .btn-dimex {
+            position: absolute;
+            bottom: -25px;
+            left: 40%;
+            &:hover,
+            &:visited {
+                color: $white-color;
+            }
+        }
+    }
+    #our-products {
+        padding-top: 100px;
+        .section-title {
+            &:before,
+            &:after {
+                @extend .section-title-line;
+                width: 170px;
+            }
+            &:before {
+                margin-right: 20px;
+            }
+            &:after {
+                margin-left: 20px;
+            }
+        }
+        .product-area {
+            margin: 25px 0 15px 0;
+            .salud-area {
+                background-color: $main-color;
+                color: $white-color;
+                margin-right: 10px;
+                margin-left: 45px;
+                .area-img {
+                    margin-bottom: 20px;
+                    margin: 50px 50px 15px 50px;
+                    width: 33%;
+                }
+                .section-subtitle {
+                    margin-bottom: 40px;
+                }
+            }
+            .industrial-area {
+                background-color: #d1d1d1;
+                margin-left: 10px;
+                .area-img {
+                    margin-bottom: 20px;
+                    margin: 40px 50px 15px 50px;
+                    width: 30%;
+                }
+                .section-subtitle {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
+#footer {
+    background-color: $main-color;
+    color: $white-color;
+    font-size: 12px;
+    font-weight: $font-light;
+    overflow: auto;
+    section {
+        padding: 20px 70px;
+        h5,
+        p,
+        a {
+            float: left;
+            margin: 0 10px;
+        }
+        a {
+            color: $white-color;
+            &:hover {
+                color: $white-color;
+                text-decoration: none;
+            }
+        }
+    }
+}

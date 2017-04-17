@@ -1,0 +1,421 @@
+/* Full HD WideScreen Monitor */
+
+@media only screen and (min-width: 1920px) {}
+
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+    .page-content {
+        #about-us {
+            .btn-dimex {
+                left: 42%;
+            }
+        }
+    }
+}
+
+
+/* HD WideScreen Monitor */
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {}
+
+
+/* TABLET & MOBILE SIZE */
+
+
+/* Tablet Portrait (acostada) size */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .page-content {
+        #somos {
+            .somos-art {
+                padding: 20px 15px;
+                .section-title {
+                    font-size: 53px;
+                }
+                .somos-desc {
+                    p {
+                        line-height: 1.6em;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .somos-img {
+                height: 410px;
+            }
+        }
+        #certificados {
+            .section-subtitle {
+                &:before,
+                &:after {
+                    width: 310px;
+                }
+            }
+            .certificados-area {
+                .cert-1,
+                .cert-2 {
+                    .viewmore {
+                        padding: 80px;
+                    }
+                }
+            }
+        }
+        .product-banner {
+            margin-top: 120px;
+            .section-subtitle {
+                &:before,
+                &:after {
+                    width: 160px;
+                    margin: 0 10px;
+                }
+            }
+            &.grilla-title {
+                .section-subtitle {
+                    &:before,
+                    &:after {
+                        width: 110px;
+                    }
+                }
+            }
+        }
+        .salud-area-extra,
+        .industrial-area-extra {
+            .indumentaria,
+            .kits,
+            .panios,
+            .descartable,
+            .tela,
+            .guantes,
+            .seguridad {
+                padding: 30px 15px;
+                .section-subtitle {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+
+/* Tablet Landscape (parada) size */
+
+@media only screen and (max-width: 768px) {
+    .page-content {
+        #about-us {
+            .btn-dimex {
+                left: 35%;
+            }
+        }
+        #somos {
+            .somos-art {
+                padding: 20px 15px;
+                .section-title {
+                    font-size: 53px;
+                }
+                .somos-desc {
+                    p {
+                        line-height: 1.6em;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .somos-img {
+                height: 500px;
+            }
+        }
+        #certificados {
+            .section-subtitle {
+                &:before,
+                &:after {
+                    width: 160px;
+                }
+            }
+            .certificados-area {
+                .cert-1,
+                .cert-2 {
+                    .viewmore {
+                        padding: 50px;
+                    }
+                }
+                .cert-1 {
+                    margin-left: 50px;
+                }
+            }
+        }
+        .product-banner {
+            margin-top: 120px;
+            .section-subtitle {
+                &:before,
+                &:after {
+                    width: 50px;
+                    margin: 0 10px;
+                }
+            }
+            &.grilla-title {
+                .section-subtitle {
+                    &:before,
+                    &:after {
+                        width: 3px;
+                    }
+                }
+            }
+        }
+        .salud-area-extra,
+        .industrial-area-extra {
+            .indumentaria,
+            .kits,
+            .panios,
+            .descartable,
+            .tela,
+            .guantes,
+            .seguridad {
+                padding: 30px 15px;
+                .section-subtitle {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container-mod {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .col-md-mod {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .navbar.navbar-default {
+        top: 0;
+        .navbar-header {
+            .navbar-toggle {
+                margin-top: 22px;
+                margin-right: 25px;
+                background-color: $main-color;
+                border-color: $main-color;
+                .glyphicon-menu-hamburger {
+                    color: $white-color;
+                }
+            }
+            .navbar-brand {
+                .logo {
+                    width: 150px;
+                }
+            }
+        }
+        .navbar-nav {
+            margin-top: 10px;
+            background-color: $white-color;
+            li {
+                &:after {
+                    content: "";
+                }
+            }
+        }
+    }
+    #myCarousel {
+        margin-top: 80px;
+    }
+    .page-content {
+        #about-us {
+            .btn-dimex {
+                left: 33%;
+            }
+        }
+        #our-products {
+            padding-top: 70px;
+            .section-title {
+                &:before,
+                &:after {
+                    width: 140px;
+                }
+            }
+            .product-area {
+                .salud-area,
+                .industrial-area {
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        #somos {
+            margin-top: 70px;
+            .somos-art {
+                padding: 20px 15px;
+            }
+        }
+        #certificados {
+            .section-subtitle {
+                &:before,
+                &:after {
+                    width: 160px;
+                }
+            }
+            .certificados-area {
+                .cert-1,
+                .cert-2 {
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .product-banner {
+            margin-top: 70px;
+            .section-subtitle {
+                &:before,
+                &:after {
+                    width: 0;
+                }
+            }
+        }
+        .product-area {
+            .salud-area,
+            .industrial-area {
+                border: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    #footer {
+        section {
+            h5,
+            p,
+            a {
+                float: none;
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+@media only screen and (max-width: 479px) {
+    .container-mod {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .col-md-mod {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .navbar.navbar-default {
+        top: 0;
+        .navbar-header {
+            .navbar-toggle {
+                margin-top: 22px;
+                margin-right: 25px;
+                background-color: $main-color;
+                border-color: $main-color;
+                .glyphicon-menu-hamburger {
+                    color: $white-color;
+                }
+            }
+            .navbar-brand {
+                .logo {
+                    width: 150px;
+                }
+            }
+        }
+        .navbar-nav {
+            margin-top: 10px;
+            background-color: $white-color;
+            li {
+                &:after {
+                    content: "";
+                }
+            }
+        }
+    }
+    #myCarousel {
+        margin-top: 80px;
+    }
+    .page-content {
+        #about-us {
+            .btn-dimex {
+                left: 20%;
+            }
+        }
+        #our-products {
+            padding-top: 70px;
+            .section-title {
+                &:before {
+                    width: 10px;
+                    margin-right: 15px;
+                }
+                &:after {
+                    width: 10px;
+                    margin-left: 15px;
+                }
+            }
+            .product-area {
+                .salud-area,
+                .industrial-area {
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        #somos {
+            margin-top: 70px;
+            .somos-art {
+                padding: 20px 15px;
+            }
+            .somos-img {
+                height: auto;
+            }
+        }
+        #certificados {
+            .section-subtitle {
+                &:before,
+                &:after {
+                    width: 10px;
+                }
+            }
+            .certificados-area {
+                .cert-1,
+                .cert-2 {
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .product-banner {
+            margin-top: 70px;
+            .section-subtitle {
+                &:before,
+                &:after {
+                    width: 0;
+                }
+            }
+        }
+        .product-area {
+            .salud-area,
+            .industrial-area {
+                border: 0;
+                margin-bottom: 10px;
+            }
+        }
+        .grilla {
+            .producto {
+                .producto-img-desc {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #footer {
+        section {
+            h5,
+            p,
+            a {
+                float: none;
+                margin: 10px 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,777 @@
+/*  CSS Document
+    Project name: Dimex 
+    File name: styles.css
+    Description: Hoja de estilos global 
+    Creation date: Abril de 2017 
+    Author: Juan Daniel Bonforti 
+    Author's eMail: juan.bonforti@gmail.com 
+*/
+/********** FONTS (Google-fonts) **********/
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,700");
+/*font-family: 'Raleway' */
+@import url("https://fonts.googleapis.com/css?family=Muli:200,300,400,700");
+/*font-family: 'Muli' */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("fonts/fontawesome-webfont.eot");
+  src: url("fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff") format("woff"), url("fonts/fontawesome-webfont.woff2") format("woff2"), url("fonts/fontawesome-webfont.ttf") format("truetype"), url("fonts/fontawesome-webfont.svg#fontawesome-webfont") format("svg"); }
+/* font-family: 'Font Awesome'; */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Muli";
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: "Muli"; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.col-md-12,
+.col-md-8,
+.col-md-6,
+.col-md-4,
+.col.lg-12,
+.col.lg-8,
+.col.lg-6,
+.col.lg-4,
+.col.sm-12,
+.col.sm-8,
+.col.sm-6,
+.col.sm-4,
+.col.xs-12,
+.col.xs-8,
+.col.xs-6,
+.col.xs-4 {
+  padding: 0px; }
+
+/*
+* Personalizadas DIMEX
+*/
+section {
+  padding: 30px 0; }
+
+.container-mod {
+  max-width: 670px;
+  margin: 0 auto; }
+
+.section-title {
+  font-size: 32px;
+  font-weight: 200; }
+
+.section-subtitle {
+  font-size: 28px;
+  font-weight: 200; }
+
+.section-title-line, .page-content #our-products .section-title:before, .page-content #our-products .section-title:after, #somos .somos-art .section-subtitle:before, #somos .somos-art .section-subtitle:after, #certificados .section-subtitle:before, #certificados .section-subtitle:after, .product-banner .section-subtitle:before, .product-banner .section-subtitle:after, .product-banner.grilla-title .section-subtitle:before, .product-banner.grilla-title .section-subtitle:after {
+  content: "";
+  display: inline-block;
+  background-color: #0267A9;
+  height: 1px;
+  vertical-align: middle; }
+
+.text-upper {
+  text-transform: uppercase; }
+
+.text-color {
+  color: #0267A9; }
+
+.text-bold {
+  font-weight: 700; }
+
+.btn-dimex {
+  background-color: #0267A9;
+  border-radius: 0;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 10px 25px;
+  color: #fff; }
+
+.col-md-mod {
+  width: 20%;
+  float: left; }
+
+.transitionstd, #certificados .certificados-area .cert-1 .viewmore,
+#certificados .certificados-area .cert-2 .viewmore, .grilla .producto .producto-img-desc {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.navbar.navbar-default {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 3px 15px 0px #afafaf; }
+  .navbar.navbar-default .navbar-header .navbar-brand .logo {
+    width: 150px; }
+  .navbar.navbar-default .navbar-nav {
+    margin-top: 20px; }
+    .navbar.navbar-default .navbar-nav li {
+      margin: 0 15px; }
+      .navbar.navbar-default .navbar-nav li a {
+        padding: 10px;
+        color: #000;
+        font-weight: 200; }
+        .navbar.navbar-default .navbar-nav li a:hover {
+          font-weight: 700;
+          color: #0267A9; }
+      .navbar.navbar-default .navbar-nav li:after {
+        position: absolute;
+        top: 13px;
+        right: -20px;
+        content: url(../assets/bullet-menu.jpg); }
+      .navbar.navbar-default .navbar-nav li:last-child:after {
+        content: ""; }
+
+.page-content #about-us {
+  background-color: #ECECEC;
+  position: relative; }
+  .page-content #about-us .about-desc {
+    line-height: 1.5em;
+    font-weight: 200; }
+    .page-content #about-us .about-desc p {
+      margin-bottom: 15px; }
+  .page-content #about-us .btn-dimex {
+    position: absolute;
+    bottom: -25px;
+    left: 40%; }
+    .page-content #about-us .btn-dimex:hover, .page-content #about-us .btn-dimex:visited {
+      color: #fff; }
+.page-content #our-products {
+  padding-top: 100px; }
+  .page-content #our-products .section-title:before, .page-content #our-products .section-title:after {
+    width: 170px; }
+  .page-content #our-products .section-title:before {
+    margin-right: 20px; }
+  .page-content #our-products .section-title:after {
+    margin-left: 20px; }
+  .page-content #our-products .product-area {
+    margin: 25px 0 15px 0; }
+    .page-content #our-products .product-area .salud-area {
+      background-color: #0267A9;
+      color: #fff;
+      margin-right: 10px;
+      margin-left: 45px; }
+      .page-content #our-products .product-area .salud-area .area-img {
+        margin-bottom: 20px;
+        margin: 50px 50px 15px 50px;
+        width: 33%; }
+      .page-content #our-products .product-area .salud-area .section-subtitle {
+        margin-bottom: 40px; }
+    .page-content #our-products .product-area .industrial-area {
+      background-color: #d1d1d1;
+      margin-left: 10px; }
+      .page-content #our-products .product-area .industrial-area .area-img {
+        margin-bottom: 20px;
+        margin: 40px 50px 15px 50px;
+        width: 30%; }
+      .page-content #our-products .product-area .industrial-area .section-subtitle {
+        margin-bottom: 40px; }
+
+#footer {
+  background-color: #0267A9;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 200;
+  overflow: auto; }
+  #footer section {
+    padding: 20px 70px; }
+    #footer section h5,
+    #footer section p,
+    #footer section a {
+      float: left;
+      margin: 0 10px; }
+    #footer section a {
+      color: #fff; }
+      #footer section a:hover {
+        color: #fff;
+        text-decoration: none; }
+
+#somos {
+  color: #0267A9;
+  margin-top: 120px; }
+  #somos .somos-art {
+    padding: 40px 65px;
+    background-color: #ECECEC; }
+    #somos .somos-art .section-subtitle:before, #somos .somos-art .section-subtitle:after {
+      width: 75px;
+      margin: 0 10px; }
+    #somos .somos-art .section-title {
+      font-size: 74px;
+      margin-bottom: 20px; }
+    #somos .somos-art .somos-desc p {
+      line-height: 1.7em;
+      margin-bottom: 15px; }
+  #somos .somos-img {
+    width: 100%; }
+
+#certificados {
+  color: #0267A9; }
+  #certificados .section-subtitle:before, #certificados .section-subtitle:after {
+    width: 400px;
+    margin: 0 10px; }
+  #certificados .certificados-area {
+    margin: 40px 0 15px 0; }
+    #certificados .certificados-area .cert-img {
+      width: 100%; }
+    #certificados .certificados-area .cert-1,
+    #certificados .certificados-area .cert-2 {
+      border: 5px solid #000;
+      border-radius: 5px;
+      position: relative; }
+      #certificados .certificados-area .cert-1 .viewmore,
+      #certificados .certificados-area .cert-2 .viewmore {
+        width: 100%;
+        height: 100%;
+        padding: 110px;
+        font-size: 24px;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        background: rgba(255, 255, 255, 0.6);
+        color: #0267A9;
+        opacity: 0; }
+        #certificados .certificados-area .cert-1 .viewmore .glyphicons,
+        #certificados .certificados-area .cert-2 .viewmore .glyphicons {
+          font-size: 54px;
+          margin-top: 10px;
+          display: block; }
+      #certificados .certificados-area .cert-1:hover .viewmore,
+      #certificados .certificados-area .cert-2:hover .viewmore {
+        opacity: 1; }
+    #certificados .certificados-area .cert-1 {
+      margin-right: 10px;
+      margin-left: 75px; }
+    #certificados .certificados-area .cert-2 {
+      margin-left: 10px; }
+
+.product-banner {
+  margin-top: 150px;
+  padding-bottom: 15px;
+  color: #0267A9; }
+  .product-banner .section-subtitle {
+    margin-bottom: 40px; }
+    .product-banner .section-subtitle:before, .product-banner .section-subtitle:after {
+      width: 280px; }
+  .product-banner .product-banner-img {
+    width: 100%; }
+  .product-banner.grilla-title .section-subtitle {
+    margin-bottom: 40px; }
+    .product-banner.grilla-title .section-subtitle:before, .product-banner.grilla-title .section-subtitle:after {
+      width: 210px;
+      margin: 0 10px; }
+
+.product-area {
+  margin-bottom: 20px; }
+  .product-area .salud-area,
+  .product-area .industrial-area {
+    background-color: #d1d1d1;
+    color: #0267A9;
+    border-right: 5px solid #FFF; }
+    .product-area .salud-area .area-img,
+    .product-area .industrial-area .area-img {
+      margin-bottom: 20px;
+      margin: 62px 50px 15px 50px;
+      width: 33%; }
+    .product-area .salud-area .section-subtitle,
+    .product-area .industrial-area .section-subtitle {
+      margin-bottom: 40px; }
+    .product-area .salud-area:hover,
+    .product-area .industrial-area:hover {
+      background-color: #3581B9;
+      color: #fff; }
+  .product-area .industrial-area {
+    border-right: 0;
+    border-left: 5px solid #FFF; }
+
+.mobile,
+.salud-area-extra,
+.industrial-area-extra {
+  margin-bottom: 40px;
+  display: none; }
+  .mobile .indumentaria,
+  .mobile .kits,
+  .mobile .panios,
+  .mobile .descartable,
+  .mobile .tela,
+  .mobile .guantes,
+  .mobile .seguridad,
+  .salud-area-extra .indumentaria,
+  .salud-area-extra .kits,
+  .salud-area-extra .panios,
+  .salud-area-extra .descartable,
+  .salud-area-extra .tela,
+  .salud-area-extra .guantes,
+  .salud-area-extra .seguridad,
+  .industrial-area-extra .indumentaria,
+  .industrial-area-extra .kits,
+  .industrial-area-extra .panios,
+  .industrial-area-extra .descartable,
+  .industrial-area-extra .tela,
+  .industrial-area-extra .guantes,
+  .industrial-area-extra .seguridad {
+    background-color: #d1d1d1;
+    color: #0267A9;
+    border-right: 5px solid #FFF;
+    padding: 25px;
+    height: 100px;
+    margin-bottom: 10px; }
+    .mobile .indumentaria .section-subtitle,
+    .mobile .kits .section-subtitle,
+    .mobile .panios .section-subtitle,
+    .mobile .descartable .section-subtitle,
+    .mobile .tela .section-subtitle,
+    .mobile .guantes .section-subtitle,
+    .mobile .seguridad .section-subtitle,
+    .salud-area-extra .indumentaria .section-subtitle,
+    .salud-area-extra .kits .section-subtitle,
+    .salud-area-extra .panios .section-subtitle,
+    .salud-area-extra .descartable .section-subtitle,
+    .salud-area-extra .tela .section-subtitle,
+    .salud-area-extra .guantes .section-subtitle,
+    .salud-area-extra .seguridad .section-subtitle,
+    .industrial-area-extra .indumentaria .section-subtitle,
+    .industrial-area-extra .kits .section-subtitle,
+    .industrial-area-extra .panios .section-subtitle,
+    .industrial-area-extra .descartable .section-subtitle,
+    .industrial-area-extra .tela .section-subtitle,
+    .industrial-area-extra .guantes .section-subtitle,
+    .industrial-area-extra .seguridad .section-subtitle {
+      font-size: 24px; }
+    .mobile .indumentaria:hover,
+    .mobile .kits:hover,
+    .mobile .panios:hover,
+    .mobile .descartable:hover,
+    .mobile .tela:hover,
+    .mobile .guantes:hover,
+    .mobile .seguridad:hover,
+    .salud-area-extra .indumentaria:hover,
+    .salud-area-extra .kits:hover,
+    .salud-area-extra .panios:hover,
+    .salud-area-extra .descartable:hover,
+    .salud-area-extra .tela:hover,
+    .salud-area-extra .guantes:hover,
+    .salud-area-extra .seguridad:hover,
+    .industrial-area-extra .indumentaria:hover,
+    .industrial-area-extra .kits:hover,
+    .industrial-area-extra .panios:hover,
+    .industrial-area-extra .descartable:hover,
+    .industrial-area-extra .tela:hover,
+    .industrial-area-extra .guantes:hover,
+    .industrial-area-extra .seguridad:hover {
+      background-color: #3581B9;
+      color: #fff;
+      text-decoration: none; }
+  .mobile .kits,
+  .salud-area-extra .kits,
+  .industrial-area-extra .kits {
+    padding: 35px; }
+
+.grilla {
+  margin-top: 30px; }
+  .grilla .producto {
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    margin-bottom: 15px; }
+    .grilla .producto .producto-img {
+      width: 100%;
+      height: 100%; }
+      .grilla .producto .producto-img img {
+        height: 100%;
+        width: 100%; }
+    .grilla .producto .producto-img-desc {
+      background: #0267A9;
+      color: #fff;
+      position: absolute;
+      width: 98%;
+      height: 100%;
+      top: 0;
+      opacity: .5; }
+      .grilla .producto .producto-img-desc .section-subtitle {
+        position: relative;
+        top: 40%;
+        left: 0px; }
+    .grilla .producto:hover .producto-img-desc {
+      opacity: .8; }
+      .grilla .producto:hover .producto-img-desc h3 {
+        font-weight: 400; }
+
+/* Full HD WideScreen Monitor */
+@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+  .page-content #about-us .btn-dimex {
+    left: 42%; } }
+/* HD WideScreen Monitor */
+/* TABLET & MOBILE SIZE */
+/* Tablet Portrait (acostada) size */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .page-content #somos .somos-art {
+    padding: 20px 15px; }
+    .page-content #somos .somos-art .section-title {
+      font-size: 53px; }
+    .page-content #somos .somos-art .somos-desc p {
+      line-height: 1.6em;
+      font-size: 14px; }
+  .page-content #somos .somos-img {
+    height: 410px; }
+  .page-content #certificados .section-subtitle:before, .page-content #certificados .section-subtitle:after {
+    width: 310px; }
+  .page-content #certificados .certificados-area .cert-1 .viewmore,
+  .page-content #certificados .certificados-area .cert-2 .viewmore {
+    padding: 80px; }
+  .page-content .product-banner {
+    margin-top: 120px; }
+    .page-content .product-banner .section-subtitle:before, .page-content .product-banner .section-subtitle:after {
+      width: 160px;
+      margin: 0 10px; }
+    .page-content .product-banner.grilla-title .section-subtitle:before, .page-content .product-banner.grilla-title .section-subtitle:after {
+      width: 110px; }
+  .page-content .salud-area-extra .indumentaria,
+  .page-content .salud-area-extra .kits,
+  .page-content .salud-area-extra .panios,
+  .page-content .salud-area-extra .descartable,
+  .page-content .salud-area-extra .tela,
+  .page-content .salud-area-extra .guantes,
+  .page-content .salud-area-extra .seguridad,
+  .page-content .industrial-area-extra .indumentaria,
+  .page-content .industrial-area-extra .kits,
+  .page-content .industrial-area-extra .panios,
+  .page-content .industrial-area-extra .descartable,
+  .page-content .industrial-area-extra .tela,
+  .page-content .industrial-area-extra .guantes,
+  .page-content .industrial-area-extra .seguridad {
+    padding: 30px 15px; }
+    .page-content .salud-area-extra .indumentaria .section-subtitle,
+    .page-content .salud-area-extra .kits .section-subtitle,
+    .page-content .salud-area-extra .panios .section-subtitle,
+    .page-content .salud-area-extra .descartable .section-subtitle,
+    .page-content .salud-area-extra .tela .section-subtitle,
+    .page-content .salud-area-extra .guantes .section-subtitle,
+    .page-content .salud-area-extra .seguridad .section-subtitle,
+    .page-content .industrial-area-extra .indumentaria .section-subtitle,
+    .page-content .industrial-area-extra .kits .section-subtitle,
+    .page-content .industrial-area-extra .panios .section-subtitle,
+    .page-content .industrial-area-extra .descartable .section-subtitle,
+    .page-content .industrial-area-extra .tela .section-subtitle,
+    .page-content .industrial-area-extra .guantes .section-subtitle,
+    .page-content .industrial-area-extra .seguridad .section-subtitle {
+      font-size: 18px; } }
+/* Tablet Landscape (parada) size */
+@media only screen and (max-width: 768px) {
+  .page-content #about-us .btn-dimex {
+    left: 35%; }
+  .page-content #somos .somos-art {
+    padding: 20px 15px; }
+    .page-content #somos .somos-art .section-title {
+      font-size: 53px; }
+    .page-content #somos .somos-art .somos-desc p {
+      line-height: 1.6em;
+      font-size: 14px; }
+  .page-content #somos .somos-img {
+    height: 500px; }
+  .page-content #certificados .section-subtitle:before, .page-content #certificados .section-subtitle:after {
+    width: 160px; }
+  .page-content #certificados .certificados-area .cert-1 .viewmore,
+  .page-content #certificados .certificados-area .cert-2 .viewmore {
+    padding: 50px; }
+  .page-content #certificados .certificados-area .cert-1 {
+    margin-left: 50px; }
+  .page-content .product-banner {
+    margin-top: 120px; }
+    .page-content .product-banner .section-subtitle:before, .page-content .product-banner .section-subtitle:after {
+      width: 50px;
+      margin: 0 10px; }
+    .page-content .product-banner.grilla-title .section-subtitle:before, .page-content .product-banner.grilla-title .section-subtitle:after {
+      width: 3px; }
+  .page-content .salud-area-extra .indumentaria,
+  .page-content .salud-area-extra .kits,
+  .page-content .salud-area-extra .panios,
+  .page-content .salud-area-extra .descartable,
+  .page-content .salud-area-extra .tela,
+  .page-content .salud-area-extra .guantes,
+  .page-content .salud-area-extra .seguridad,
+  .page-content .industrial-area-extra .indumentaria,
+  .page-content .industrial-area-extra .kits,
+  .page-content .industrial-area-extra .panios,
+  .page-content .industrial-area-extra .descartable,
+  .page-content .industrial-area-extra .tela,
+  .page-content .industrial-area-extra .guantes,
+  .page-content .industrial-area-extra .seguridad {
+    padding: 30px 15px; }
+    .page-content .salud-area-extra .indumentaria .section-subtitle,
+    .page-content .salud-area-extra .kits .section-subtitle,
+    .page-content .salud-area-extra .panios .section-subtitle,
+    .page-content .salud-area-extra .descartable .section-subtitle,
+    .page-content .salud-area-extra .tela .section-subtitle,
+    .page-content .salud-area-extra .guantes .section-subtitle,
+    .page-content .salud-area-extra .seguridad .section-subtitle,
+    .page-content .industrial-area-extra .indumentaria .section-subtitle,
+    .page-content .industrial-area-extra .kits .section-subtitle,
+    .page-content .industrial-area-extra .panios .section-subtitle,
+    .page-content .industrial-area-extra .descartable .section-subtitle,
+    .page-content .industrial-area-extra .tela .section-subtitle,
+    .page-content .industrial-area-extra .guantes .section-subtitle,
+    .page-content .industrial-area-extra .seguridad .section-subtitle {
+      font-size: 18px; } }
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container-mod {
+    max-width: 90%;
+    margin: 0 auto; }
+
+  .col-md-mod {
+    width: 100%;
+    margin-bottom: 10px; }
+
+  .navbar.navbar-default {
+    top: 0; }
+    .navbar.navbar-default .navbar-header .navbar-toggle {
+      margin-top: 22px;
+      margin-right: 25px;
+      background-color: #0267A9;
+      border-color: #0267A9; }
+      .navbar.navbar-default .navbar-header .navbar-toggle .glyphicon-menu-hamburger {
+        color: #fff; }
+    .navbar.navbar-default .navbar-header .navbar-brand .logo {
+      width: 150px; }
+    .navbar.navbar-default .navbar-nav {
+      margin-top: 10px;
+      background-color: #fff; }
+      .navbar.navbar-default .navbar-nav li:after {
+        content: ""; }
+
+  #myCarousel {
+    margin-top: 80px; }
+
+  .page-content #about-us .btn-dimex {
+    left: 33%; }
+  .page-content #our-products {
+    padding-top: 70px; }
+    .page-content #our-products .section-title:before, .page-content #our-products .section-title:after {
+      width: 140px; }
+    .page-content #our-products .product-area .salud-area,
+    .page-content #our-products .product-area .industrial-area {
+      margin: 0;
+      margin-bottom: 10px; }
+  .page-content #somos {
+    margin-top: 70px; }
+    .page-content #somos .somos-art {
+      padding: 20px 15px; }
+  .page-content #certificados .section-subtitle:before, .page-content #certificados .section-subtitle:after {
+    width: 160px; }
+  .page-content #certificados .certificados-area .cert-1,
+  .page-content #certificados .certificados-area .cert-2 {
+    margin: 0;
+    margin-bottom: 10px; }
+  .page-content .product-banner {
+    margin-top: 70px; }
+    .page-content .product-banner .section-subtitle:before, .page-content .product-banner .section-subtitle:after {
+      width: 0; }
+  .page-content .product-area .salud-area,
+  .page-content .product-area .industrial-area {
+    border: 0;
+    margin-bottom: 10px; }
+
+  #footer section h5,
+  #footer section p,
+  #footer section a {
+    float: none;
+    margin: 10px 0; } }
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  .container-mod {
+    max-width: 90%;
+    margin: 0 auto; }
+
+  .col-md-mod {
+    width: 100%;
+    margin-bottom: 10px; }
+
+  .navbar.navbar-default {
+    top: 0; }
+    .navbar.navbar-default .navbar-header .navbar-toggle {
+      margin-top: 22px;
+      margin-right: 25px;
+      background-color: #0267A9;
+      border-color: #0267A9; }
+      .navbar.navbar-default .navbar-header .navbar-toggle .glyphicon-menu-hamburger {
+        color: #fff; }
+    .navbar.navbar-default .navbar-header .navbar-brand .logo {
+      width: 150px; }
+    .navbar.navbar-default .navbar-nav {
+      margin-top: 10px;
+      background-color: #fff; }
+      .navbar.navbar-default .navbar-nav li:after {
+        content: ""; }
+
+  #myCarousel {
+    margin-top: 80px; }
+
+  .page-content #about-us .btn-dimex {
+    left: 20%; }
+  .page-content #our-products {
+    padding-top: 70px; }
+    .page-content #our-products .section-title:before {
+      width: 10px;
+      margin-right: 15px; }
+    .page-content #our-products .section-title:after {
+      width: 10px;
+      margin-left: 15px; }
+    .page-content #our-products .product-area .salud-area,
+    .page-content #our-products .product-area .industrial-area {
+      margin: 0;
+      margin-bottom: 10px; }
+  .page-content #somos {
+    margin-top: 70px; }
+    .page-content #somos .somos-art {
+      padding: 20px 15px; }
+    .page-content #somos .somos-img {
+      height: auto; }
+  .page-content #certificados .section-subtitle:before, .page-content #certificados .section-subtitle:after {
+    width: 10px; }
+  .page-content #certificados .certificados-area .cert-1,
+  .page-content #certificados .certificados-area .cert-2 {
+    margin: 0;
+    margin-bottom: 10px; }
+  .page-content .product-banner {
+    margin-top: 70px; }
+    .page-content .product-banner .section-subtitle:before, .page-content .product-banner .section-subtitle:after {
+      width: 0; }
+  .page-content .product-area .salud-area,
+  .page-content .product-area .industrial-area {
+    border: 0;
+    margin-bottom: 10px; }
+  .page-content .grilla .producto .producto-img-desc {
+    width: 100%; }
+
+  #footer section h5,
+  #footer section p,
+  #footer section a {
+    float: none;
+    margin: 10px 0; } }
+
+/*# sourceMappingURL=style.css.map */
