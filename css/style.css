@@ -185,7 +185,7 @@ section {
 .section-title-line, .page-content #our-products .section-title:before, .page-content #our-products .section-title:after, #somos .somos-art .section-subtitle:before, #somos .somos-art .section-subtitle:after, #certificados .section-subtitle:before, #certificados .section-subtitle:after, .product-banner .section-subtitle:before, .product-banner .section-subtitle:after, .product-banner.grilla-title .section-subtitle:before, .product-banner.grilla-title .section-subtitle:after {
   content: "";
   display: inline-block;
-  background-color: #0267A9;
+  background-color: #3581B9;
   height: 1px;
   vertical-align: middle; }
 
@@ -193,13 +193,13 @@ section {
   text-transform: uppercase; }
 
 .text-color {
-  color: #0267A9; }
+  color: #3581B9; }
 
 .text-bold {
   font-weight: 700; }
 
 .btn-dimex {
-  background-color: #0267A9;
+  background-color: #3581B9;
   border-radius: 0;
   font-size: 20px;
   font-weight: 200;
@@ -237,13 +237,13 @@ section {
         color: #000;
         font-weight: 200; }
         .navbar.navbar-default .navbar-nav li a:hover {
-          font-weight: 700;
-          color: #0267A9; }
+          color: #3581B9; }
       .navbar.navbar-default .navbar-nav li:after {
         position: absolute;
         top: 13px;
         right: -20px;
-        content: url(../assets/bullet-menu.jpg); }
+        content: url(../assets/bullet-menu.svg);
+        width: 12px; }
       .navbar.navbar-default .navbar-nav li:last-child:after {
         content: ""; }
 
@@ -271,29 +271,39 @@ section {
     margin-left: 20px; }
   .page-content #our-products .product-area {
     margin: 25px 0 15px 0; }
-    .page-content #our-products .product-area .salud-area {
-      background-color: #0267A9;
-      color: #fff;
+    .page-content #our-products .product-area .salud-area,
+    .page-content #our-products .product-area .industrial-area {
+      background-color: #d1d1d1;
+      color: #3581B9;
       margin-right: 10px;
       margin-left: 45px; }
-      .page-content #our-products .product-area .salud-area .area-img {
+      .page-content #our-products .product-area .salud-area .area-img,
+      .page-content #our-products .product-area .industrial-area .area-img {
         margin-bottom: 20px;
         margin: 50px 50px 15px 50px;
         width: 33%; }
-      .page-content #our-products .product-area .salud-area .section-subtitle {
-        margin-bottom: 40px; }
-    .page-content #our-products .product-area .industrial-area {
-      background-color: #d1d1d1;
-      margin-left: 10px; }
-      .page-content #our-products .product-area .industrial-area .area-img {
-        margin-bottom: 20px;
-        margin: 40px 50px 15px 50px;
-        width: 30%; }
+      .page-content #our-products .product-area .salud-area .section-subtitle,
       .page-content #our-products .product-area .industrial-area .section-subtitle {
         margin-bottom: 40px; }
+      .page-content #our-products .product-area .salud-area .area-img.second,
+      .page-content #our-products .product-area .industrial-area .area-img.second {
+        display: none; }
+    .page-content #our-products .product-area .salud-area:hover,
+    .page-content #our-products .product-area .industrial-area:hover {
+      background-color: rgba(53, 129, 185, 0.8);
+      color: #fff;
+      text-decoration: none; }
+      .page-content #our-products .product-area .salud-area:hover .area-img,
+      .page-content #our-products .product-area .industrial-area:hover .area-img {
+        display: none; }
+        .page-content #our-products .product-area .salud-area:hover .area-img.second,
+        .page-content #our-products .product-area .industrial-area:hover .area-img.second {
+          display: inline-block; }
+    .page-content #our-products .product-area .salud-area {
+      padding: 7px; }
 
 #footer {
-  background-color: #0267A9;
+  background-color: #3581B9;
   color: #fff;
   font-size: 12px;
   font-weight: 200;
@@ -312,7 +322,7 @@ section {
         text-decoration: none; }
 
 #somos {
-  color: #0267A9;
+  color: #3581B9;
   margin-top: 120px; }
   #somos .somos-art {
     padding: 40px 65px;
@@ -330,7 +340,7 @@ section {
     width: 100%; }
 
 #certificados {
-  color: #0267A9; }
+  color: #3581B9; }
   #certificados .section-subtitle:before, #certificados .section-subtitle:after {
     width: 400px;
     margin: 0 10px; }
@@ -353,7 +363,7 @@ section {
         left: 0;
         top: 0px;
         background: rgba(255, 255, 255, 0.6);
-        color: #0267A9;
+        color: #3581B9;
         opacity: 0; }
         #certificados .certificados-area .cert-1 .viewmore .glyphicons,
         #certificados .certificados-area .cert-2 .viewmore .glyphicons {
@@ -372,7 +382,7 @@ section {
 .product-banner {
   margin-top: 150px;
   padding-bottom: 15px;
-  color: #0267A9; }
+  color: #3581B9; }
   .product-banner .section-subtitle {
     margin-bottom: 40px; }
     .product-banner .section-subtitle:before, .product-banner .section-subtitle:after {
@@ -389,20 +399,20 @@ section {
   margin-bottom: 20px; }
   .product-area .salud-area,
   .product-area .industrial-area {
-    background-color: #d1d1d1;
-    color: #0267A9;
+    background-color: rgba(208, 209, 209, 0.5);
+    color: #3581B9;
     border-right: 5px solid #FFF; }
     .product-area .salud-area .area-img,
     .product-area .industrial-area .area-img {
       margin-bottom: 20px;
-      margin: 62px 50px 15px 50px;
-      width: 33%; }
+      margin: 20px 50px;
+      width: 30%; }
     .product-area .salud-area .section-subtitle,
     .product-area .industrial-area .section-subtitle {
-      margin-bottom: 40px; }
+      margin-bottom: 20px; }
     .product-area .salud-area:hover,
     .product-area .industrial-area:hover {
-      background-color: #3581B9;
+      background-color: rgba(53, 129, 185, 0.8);
       color: #fff; }
   .product-area .industrial-area {
     border-right: 0;
@@ -434,8 +444,8 @@ section {
   .industrial-area-extra .tela,
   .industrial-area-extra .guantes,
   .industrial-area-extra .seguridad {
-    background-color: #d1d1d1;
-    color: #0267A9;
+    background-color: rgba(208, 209, 209, 0.5);
+    color: #3581B9;
     border-right: 5px solid #FFF;
     padding: 25px;
     height: 100px;
@@ -483,7 +493,7 @@ section {
     .industrial-area-extra .tela:hover,
     .industrial-area-extra .guantes:hover,
     .industrial-area-extra .seguridad:hover {
-      background-color: #3581B9;
+      background-color: rgba(53, 129, 185, 0.8);
       color: #fff;
       text-decoration: none; }
   .mobile .kits,
@@ -505,7 +515,7 @@ section {
         height: 100%;
         width: 100%; }
     .grilla .producto .producto-img-desc {
-      background: #0267A9;
+      background: #3581B9;
       color: #fff;
       position: absolute;
       width: 98%;
@@ -515,9 +525,12 @@ section {
       .grilla .producto .producto-img-desc .section-subtitle {
         position: relative;
         top: 40%;
-        left: 0px; }
+        left: 0px;
+        font-size: 22px;
+        font-weight: 100;
+        padding: 0 20px; }
     .grilla .producto:hover .producto-img-desc {
-      opacity: .8; }
+      opacity: .9; }
       .grilla .producto:hover .producto-img-desc h3 {
         font-weight: 400; }
 
@@ -597,7 +610,7 @@ section {
     width: 160px; }
   .page-content #certificados .certificados-area .cert-1 .viewmore,
   .page-content #certificados .certificados-area .cert-2 .viewmore {
-    padding: 50px; }
+    padding: 75px; }
   .page-content #certificados .certificados-area .cert-1 {
     margin-left: 50px; }
   .page-content .product-banner {
@@ -652,8 +665,8 @@ section {
     .navbar.navbar-default .navbar-header .navbar-toggle {
       margin-top: 22px;
       margin-right: 25px;
-      background-color: #0267A9;
-      border-color: #0267A9; }
+      background-color: #3581B9;
+      border-color: #3581B9; }
       .navbar.navbar-default .navbar-header .navbar-toggle .glyphicon-menu-hamburger {
         color: #fff; }
     .navbar.navbar-default .navbar-header .navbar-brand .logo {
@@ -672,7 +685,7 @@ section {
   .page-content #our-products {
     padding-top: 70px; }
     .page-content #our-products .section-title:before, .page-content #our-products .section-title:after {
-      width: 140px; }
+      width: 90px; }
     .page-content #our-products .product-area .salud-area,
     .page-content #our-products .product-area .industrial-area {
       margin: 0;
@@ -716,8 +729,8 @@ section {
     .navbar.navbar-default .navbar-header .navbar-toggle {
       margin-top: 22px;
       margin-right: 25px;
-      background-color: #0267A9;
-      border-color: #0267A9; }
+      background-color: #3581B9;
+      border-color: #3581B9; }
       .navbar.navbar-default .navbar-header .navbar-toggle .glyphicon-menu-hamburger {
         color: #fff; }
     .navbar.navbar-default .navbar-header .navbar-brand .logo {
@@ -733,18 +746,15 @@ section {
 
   .page-content #about-us .btn-dimex {
     left: 20%; }
-  .page-content #our-products {
-    padding-top: 70px; }
-    .page-content #our-products .section-title:before {
-      width: 10px;
-      margin-right: 15px; }
-    .page-content #our-products .section-title:after {
-      width: 10px;
-      margin-left: 15px; }
-    .page-content #our-products .product-area .salud-area,
-    .page-content #our-products .product-area .industrial-area {
-      margin: 0;
-      margin-bottom: 10px; }
+  .page-content #our-products .section-title {
+    font-size: 28px; }
+    .page-content #our-products .section-title:before, .page-content #our-products .section-title:after {
+      width: 30px;
+      margin: 0px 7px; }
+  .page-content #our-products .product-area .salud-area,
+  .page-content #our-products .product-area .industrial-area {
+    margin: 0;
+    margin-bottom: 10px; }
   .page-content #somos {
     margin-top: 70px; }
     .page-content #somos .somos-art {
@@ -773,5 +783,18 @@ section {
   #footer section a {
     float: none;
     margin: 10px 0; } }
+@media only screen and (max-width: 320px) {
+  .page-content #about-us .btn-dimex {
+    left: 12.4%; }
+  .page-content #our-products .section-title {
+    font-size: 28px; }
+    .page-content #our-products .section-title:before, .page-content #our-products .section-title:after {
+      width: 10px;
+      margin: 0 5px; }
+  .page-content #somos .somos-art .section-subtitle:before, .page-content #somos .somos-art .section-subtitle:after {
+    width: 50px; }
+  .page-content #certificados .section-subtitle:after, .page-content #certificados .section-subtitle:before {
+    width: 0;
+    margin: 0; } }
 
 /*# sourceMappingURL=style.css.map */

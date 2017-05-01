@@ -30,19 +30,19 @@
     margin-bottom: 20px;
     .salud-area,
     .industrial-area {
-        background-color: #d1d1d1;
+        background-color: $gray-color;
         color: $main-color;
         border-right: 5px solid #FFF;
         .area-img {
             margin-bottom: 20px;
-            margin: 62px 50px 15px 50px;
-            width: 33%;
+            margin: 20px 50px;
+            width: 30%;
         }
         .section-subtitle {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
         &:hover {
-            background-color: $blue-color;
+            background-color: $hover-color;
             color: $white-color;
         }
     }
@@ -64,7 +64,7 @@
     .tela,
     .guantes,
     .seguridad {
-        background-color: #d1d1d1;
+        background-color: $gray-color;
         color: $main-color;
         border-right: 5px solid #FFF;
         padding: 25px;
@@ -74,7 +74,7 @@
             font-size: 24px;
         }
         &:hover {
-            background-color: $blue-color;
+            background-color: $hover-color;
             color: $white-color;
             text-decoration: none;
         }
@@ -112,11 +112,14 @@
                 position: relative;
                 top: 40%;
                 left: 0px;
+                font-size: 22px;
+                font-weight: 100;
+                padding: 0 20px;
             }
         }
         &:hover {
             .producto-img-desc {
-                opacity: .8;
+                opacity: .9;
                 h3 {
                     font-weight: $font-semibold;
                 }

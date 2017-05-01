@@ -24,7 +24,7 @@
                     color: $black-color;
                     font-weight: $font-light;
                     &:hover {
-                        font-weight: $font-bold;
+                        //font-weight: $font-bold;
                         color: $main-color;
                     }
                 }
@@ -32,7 +32,8 @@
                     position: absolute;
                     top: 13px;
                     right: -20px;
-                    content: url(../assets/bullet-menu.jpg);
+                    content: url(../assets/bullet-menu.svg);
+                    width: 12px;
                 }
                 &:last-child:after {
                     content: "";
@@ -80,9 +81,10 @@
         }
         .product-area {
             margin: 25px 0 15px 0;
-            .salud-area {
-                background-color: $main-color;
-                color: $white-color;
+            .salud-area,
+            .industrial-area {
+                background-color: #d1d1d1;
+                color: $main-color;
                 margin-right: 10px;
                 margin-left: 45px;
                 .area-img {
@@ -93,18 +95,28 @@
                 .section-subtitle {
                     margin-bottom: 40px;
                 }
-            }
-            .industrial-area {
-                background-color: #d1d1d1;
-                margin-left: 10px;
                 .area-img {
-                    margin-bottom: 20px;
-                    margin: 40px 50px 15px 50px;
-                    width: 30%;
+                    &.second {
+                        display: none;
+                    }
                 }
-                .section-subtitle {
-                    margin-bottom: 40px;
+            }
+            .salud-area,
+            .industrial-area {
+                &:hover {
+                    background-color: $hover-color;
+                    color: $white-color;
+                    text-decoration: none;
+                    .area-img {
+                        display: none;
+                        &.second {
+                            display: inline-block;
+                        }
+                    }
                 }
+            }
+            .salud-area {
+                padding: 7px;
             }
         }
     }
