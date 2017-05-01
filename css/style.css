@@ -182,7 +182,7 @@ section {
   font-size: 28px;
   font-weight: 200; }
 
-.section-title-line, .page-content #our-products .section-title:before, .page-content #our-products .section-title:after, #somos .somos-art .section-subtitle:before, #somos .somos-art .section-subtitle:after, #certificados .section-subtitle:before, #certificados .section-subtitle:after, .product-banner .section-subtitle:before, .product-banner .section-subtitle:after, .product-banner.grilla-title .section-subtitle:before, .product-banner.grilla-title .section-subtitle:after {
+.section-title-line, .page-content #our-products .section-title:before, .page-content #our-products .section-title:after, #somos .somos-art .section-subtitle:before, #somos .somos-art .section-subtitle:after, #certificados .section-subtitle:before, #certificados .section-subtitle:after, .product-banner .section-subtitle:before, .product-banner .section-subtitle:after, .product-banner.grilla-title .section-subtitle:before, .product-banner.grilla-title .section-subtitle:after, #find-us .section-title:before, #find-us .section-title:after {
   content: "";
   display: inline-block;
   background-color: #3581B9;
@@ -205,6 +205,9 @@ section {
   font-weight: 200;
   padding: 10px 25px;
   color: #fff; }
+  .btn-dimex:hover, .btn-dimex:focus, .btn-dimex:visited {
+    color: #fff;
+    text-decoration: none; }
 
 .col-md-mod {
   width: 20%;
@@ -534,6 +537,32 @@ section {
       .grilla .producto:hover .producto-img-desc h3 {
         font-weight: 400; }
 
+#contact {
+  margin-top: 180px;
+  padding: 0;
+  background-color: #ECECEC; }
+  #contact .banner-section {
+    padding: 0; }
+  #contact .form-section {
+    padding: 65px; }
+    #contact .form-section .form-group {
+      margin-bottom: 40px; }
+      #contact .form-section .form-group label {
+        margin-bottom: 20px; }
+      #contact .form-section .form-group input,
+      #contact .form-section .form-group textarea {
+        background-color: #ececec;
+        border-color: #3581B9;
+        border-radius: 0; }
+
+#find-us {
+  margin: 45px 0; }
+  #find-us .section-title:before, #find-us .section-title:after {
+    width: 420px;
+    margin: 0 10px; }
+  #find-us iframe {
+    margin: 30px 0; }
+
 /* Full HD WideScreen Monitor */
 @media only screen and (min-width: 1440px) and (max-width: 1919px) {
   .page-content #about-us .btn-dimex {
@@ -592,7 +621,15 @@ section {
     .page-content .industrial-area-extra .tela .section-subtitle,
     .page-content .industrial-area-extra .guantes .section-subtitle,
     .page-content .industrial-area-extra .seguridad .section-subtitle {
-      font-size: 18px; } }
+      font-size: 18px; }
+  .page-content #contact .banner-section img {
+    width: 100%; }
+  .page-content #contact .form-section {
+    padding: 35px; }
+    .page-content #contact .form-section .form-group {
+      margin-bottom: 25px; }
+  .page-content #find-us .section-title:before, .page-content #find-us .section-title:after {
+    width: 210px; } }
 /* Tablet Landscape (parada) size */
 @media only screen and (max-width: 768px) {
   .page-content #about-us .btn-dimex {
@@ -649,7 +686,11 @@ section {
     .page-content .industrial-area-extra .tela .section-subtitle,
     .page-content .industrial-area-extra .guantes .section-subtitle,
     .page-content .industrial-area-extra .seguridad .section-subtitle {
-      font-size: 18px; } }
+      font-size: 18px; }
+  .page-content #contact .banner-section {
+    display: none; }
+  .page-content #find-us .section-title:before, .page-content #find-us .section-title:after {
+    width: 210px; } }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .container-mod {
@@ -708,6 +749,15 @@ section {
   .page-content .product-area .industrial-area {
     border: 0;
     margin-bottom: 10px; }
+  .page-content #contact {
+    margin-top: 115px; }
+    .page-content #contact .form-section {
+      padding: 25px; }
+      .page-content #contact .form-section .form-group {
+        margin-bottom: 20px; }
+  .page-content #find-us .section-title:before, .page-content #find-us .section-title:after {
+    width: 130px;
+    margin: 5px; }
 
   #footer section h5,
   #footer section p,
@@ -777,6 +827,14 @@ section {
     margin-bottom: 10px; }
   .page-content .grilla .producto .producto-img-desc {
     width: 100%; }
+  .page-content #contact {
+    margin-top: 115px; }
+    .page-content #contact .form-section {
+      padding: 25px; }
+      .page-content #contact .form-section .form-group {
+        margin-bottom: 20px; }
+  .page-content #find-us .section-title:before, .page-content #find-us .section-title:after {
+    width: 25px; }
 
   #footer section h5,
   #footer section p,
@@ -795,6 +853,9 @@ section {
     width: 50px; }
   .page-content #certificados .section-subtitle:after, .page-content #certificados .section-subtitle:before {
     width: 0;
-    margin: 0; } }
+    margin: 0; }
+  .page-content #find-us .section-title:before, .page-content #find-us .section-title:after {
+    width: 10px;
+    margin: 2px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -237,6 +237,12 @@ section {
     font-weight: 200;
     padding: 10px 25px;
     color: $white-color;
+    &:hover,
+    &:focus,
+    &:visited {
+        color: $white-color;
+        text-decoration: none;
+    }
 }
 
 .col-md-mod {

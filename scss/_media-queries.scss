@@ -91,6 +91,27 @@
                 }
             }
         }
+        #contact {
+            .banner-section {
+                img {
+                    width: 100%;
+                }
+            }
+            .form-section {
+                padding: 35px;
+                .form-group {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        #find-us {
+            .section-title {
+                &:before,
+                &:after {
+                    width: 210px;
+                }
+            }
+        }
     }
 }
 
@@ -170,6 +191,19 @@
                 padding: 30px 15px;
                 .section-subtitle {
                     font-size: 18px;
+                }
+            }
+        }
+        #contact {
+            .banner-section {
+                display: none;
+            }
+        }
+        #find-us {
+            .section-title {
+                &:before,
+                &:after {
+                    width: 210px;
                 }
             }
         }
@@ -276,6 +310,24 @@
             .industrial-area {
                 border: 0;
                 margin-bottom: 10px;
+            }
+        }
+        #contact {
+            margin-top: 115px;
+            .form-section {
+                padding: 25px;
+                .form-group {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        #find-us {
+            .section-title {
+                &:before,
+                &:after {
+                    width: 130px;
+                    margin: 5px;
+                }
             }
         }
     }
@@ -404,6 +456,23 @@
                 }
             }
         }
+        #contact {
+            margin-top: 115px;
+            .form-section {
+                padding: 25px;
+                .form-group {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        #find-us {
+            .section-title {
+                &:before,
+                &:after {
+                    width: 25px;
+                }
+            }
+        }
     }
     #footer {
         section {
@@ -450,6 +519,15 @@
                 &:before {
                     width: 0;
                     margin: 0;
+                }
+            }
+        }
+        #find-us {
+            .section-title {
+                &:before,
+                &:after {
+                    width: 10px;
+                    margin: 2px;
                 }
             }
         }
