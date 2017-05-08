@@ -64,24 +64,29 @@
                     <img src="assets/contact-banner.png" alt="">
                 </div>
                 <div class="col-md-7 form-section">
-                    <form action="" method="">
-                        <div class="form-group">
-                            <label for="exampleInputName1">Nombre</label>
-                            <input type="text" class="form-control" id="exampleInputName1" placeholder="">
+                    <form id="contact-form" class="form-vertical" action="php/contact.php" method="POST">
+                        <div class="form-group tooltip-container">
+                            <label class="control-label" for="exampleInputName1">Nombre</label>
+                            <input type="text" id="first-name" name="firstName" class="form-control" id="exampleInputName1" required placeholder="Indique su nombre">
+                            <div class="tooltip-custom hidden">El nombre es un campo requerido, por favor ingrese un valor</div>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputSurname1">Apellido</label>
-                            <input type="text" class="form-control" id="exampleInputSurname1" placeholder="">
+                            <label class="control-label" for="exampleInputSurname1">Apellido</label>
+                            <input type="text" id="last-name" name="lastName" class="form-control" id="exampleInputSurname1" required placeholder="Indique su apellido">
+                            <div class="tooltip-custom hidden">El Apellido es un campo requerido, por favor ingrese un valor</div>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                            <label class="control-label" for="exampleInputEmail1">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" id="exampleInputEmail1" required placeholder="Ingrese su e-mail">
+                            <div class="tooltip-custom hidden" data-type="no-email">El email es un campo requerido, por favor ingrese un valor</div>
+                            <div class="tooltip-custom hidden" data-type="invalid-email">El valor ingresado no es un email valido</div>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputMessage1">Mensaje</label>
-                            <textarea class="form-control" rows="10" id="exampleInputMessage1"></textarea>
+                            <label class="control-label" for="exampleInputMessage1">Mensaje</label>
+                            <textarea id="message" name="message" class="form-control" rows="10" id="exampleInputMessage1" required></textarea>
+                            <div class="tooltip-custom hidden">El mensaje es un campo requerido, por favor ingrese un valor</div>
                         </div>
-                        <button type="submit" class="btn btn-dimex">Enviar</button>
+                        <input type="submit" class="btn btn-dimex"></input>
                     </form>
                 </div>
             </section>
@@ -107,11 +112,13 @@
     </footer>
 
     <!-- librería-jQuery -->
-    <script src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
     <!-- js-de-bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- Custom-Scripts -->
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/contactValidator.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
 </body>
 
 </html>
