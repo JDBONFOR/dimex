@@ -544,7 +544,7 @@ section {
  * Estilos para la hoja PRODUCTO elegido
  */
 .product-banner .section-subtitle:before, .product-banner .section-subtitle:after {
-  width: 100px;
+  width: 40px;
   margin: 0 10px; }
 
 #products .item {
