@@ -127,3 +127,59 @@
         }
     }
 }
+
+
+/*
+ * Estilos para la hoja PRODUCTO elegido
+ */
+
+.product-banner {
+    .section-subtitle {
+        &:before,
+        &:after {
+            width: 100px;
+            margin: 0 10px;
+        }
+    }
+}
+
+#products {
+    .item {
+        margin-bottom: 50px;
+        .item-img {
+            background-color: $section-color;
+            border-right: 50px solid $white-color;
+            img {
+                width: 80%;
+                height: 654px;
+            }
+        }
+        .item-description {
+            padding-right: 35px;
+            .item-title {
+                margin: 25px 0 45px 0;
+                padding: 10px 10px;
+                background-color: $main-color;
+                color: $white-color;
+            }
+            .item-details {
+                border-top: 1px solid $main-color;
+                border-bottom: 1px solid $main-color;
+                padding: 50px 0 65px 0;
+                .feature {
+                    margin: 15px 0;
+                    padding: 10px 0;
+                    overflow: auto;
+                    .feature-icon {
+                        width: 35px;
+                        float: left;
+                    }
+                    .feature-description {
+                        margin-left: 60px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

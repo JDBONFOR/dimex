@@ -207,6 +207,24 @@
                 }
             }
         }
+        #products {
+            .item {
+                .item-img {
+                    img {
+                        height: 440px;
+                    }
+                }
+            }
+            .item-description {
+                .item-title {
+                    margin: 0px 0 15px 0;
+                    padding: 10px 10px;
+                }
+                .item-details {
+                    padding: 10px 0 0px 0;
+                }
+            }
+        }
     }
 }
 
@@ -327,6 +345,20 @@
                 &:after {
                     width: 130px;
                     margin: 5px;
+                }
+            }
+        }
+        #products {
+            .item {
+                .item-img {
+                    border: none;
+                }
+            }
+            .item-description {
+                padding-right: 0;
+                .item-title {
+                    margin: 15px 0;
+                    padding: 10px 10px;
                 }
             }
         }
@@ -473,6 +505,23 @@
                 }
             }
         }
+        #products {
+            .item {
+                .item-img {
+                    border: none;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .item-description {
+                padding-right: 0;
+                .item-title {
+                    margin: 15px 0;
+                    padding: 10px 10px;
+                }
+            }
+        }
     }
     #footer {
         section {
@@ -486,7 +535,7 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
     .page-content {
         #about-us {
             .btn-dimex {
