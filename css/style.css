@@ -553,8 +553,8 @@ section {
     background-color: #ECECEC;
     border-right: 50px solid #fff; }
     #products .item .item-img img {
-      width: 80%;
-      height: 654px; }
+      width: 100%;
+      height: 570px; }
   #products .item .item-description {
     padding-right: 35px; }
     #products .item .item-description .item-title {
@@ -732,7 +732,7 @@ section {
   .page-content #find-us .section-title:before, .page-content #find-us .section-title:after {
     width: 210px; }
   .page-content #products .item .item-img img {
-    height: 440px; }
+    height: 400px; }
   .page-content #products .item-description .item-title {
     margin: 0px 0 15px 0;
     padding: 10px 10px; }
@@ -892,7 +892,7 @@ section {
   .page-content #products .item .item-img {
     border: none; }
     .page-content #products .item .item-img img {
-      width: 100%; }
+      height: 370px; }
   .page-content #products .item-description {
     padding-right: 0; }
     .page-content #products .item-description .item-title {
